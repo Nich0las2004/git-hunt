@@ -1,8 +1,14 @@
-import { useRef } from "react";
+import { useRef, useContext } from "react";
+import UserContext from "../../context/user-context";
+
 const UserInput = () => {
   const userNameRef = useRef(null);
 
+  const { setUserName } = useContext(UserContext)
+
   const searchHandler = () => {
+    setUserName(userNameRef.current.value)
+
     alert(userNameRef.current.value);
   };
 
