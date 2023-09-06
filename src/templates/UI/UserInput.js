@@ -4,12 +4,15 @@ import UserContext from "../../context/user-context";
 const UserInput = () => {
   const userNameRef = useRef(null);
 
-  const { setUserName } = useContext(UserContext)
+  const { setUserName, setInfo } = useContext(UserContext);
 
-  const searchHandler = () => {
-    setUserName(userNameRef.current.value)
+  const searchHandler = async () => {
+    setUserName(userNameRef.current.value);
 
-    alert(userNameRef.current.value);
+    await fetch(`https://api.github.com/users/${userNameRef.current.value}`)
+      .then((response) => response.json())
+      .then((data) => setInfo(data))
+      .catch((err) => console.log(err));
   };
 
   return (
