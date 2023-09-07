@@ -1,7 +1,7 @@
 import { useRef, useContext } from "react";
 import UserContext from "../../context/user-context";
 
-const UserInput = () => {
+const Input = () => {
   const userNameRef = useRef(null);
 
   const { setUserName, setInfo } = useContext(UserContext);
@@ -23,4 +23,4 @@ const UserInput = () => {
   );
 };
 
-export default UserInput;
+export default Input;

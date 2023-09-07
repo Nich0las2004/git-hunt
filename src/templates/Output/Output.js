@@ -22,6 +22,8 @@ const Output = () => {
     <div className={classes.container}>
       <h1>{userName}</h1>
       <img src={info.avatar_url} />
+      <h1>Followers: {info.followers}</h1>
+      <h1>Following: {info.following}</h1>
     </div>
   );
 };

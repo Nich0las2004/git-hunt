@@ -1,4 +1,4 @@
-import UserInput from "./templates/UI/UserInput";
+import Input from "./templates/Input/Input.js";
 import Output from "./templates/Output/Output";
 
 import "./App.css";
@@ -9,7 +9,7 @@ const App = () => {
       <span>
         <h1>Git Hunt</h1>
       </span>
-      <UserInput />
+      <Input />
       <Output />
     </div>
   );
