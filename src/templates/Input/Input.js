@@ -10,8 +10,13 @@ const Input = () => {
     setUserName(userNameRef.current.value);
 
     await fetch(`https://api.github.com/users/${userNameRef.current.value}`)
-      .then((response) => response.json())
-      .then((data) => setInfo(data))
+      .then((response) => {
+        if (response.status == 404) {
+          return setInfo(response);
+        }
+        response.json()
+        .then((data) => setInfo(data))
+      })
       .catch((err) => console.log(err));
   };
 

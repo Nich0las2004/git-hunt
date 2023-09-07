@@ -1,17 +1,21 @@
 import Input from "./templates/Input/Input.js";
 import Output from "./templates/Output/Output";
+import Title from "./templates/Title/Title.js";
+import Footer from "./templates/Footer/Footer.js";
 
 import "./App.css";
+import { Fragment } from "react";
 
 const App = () => {
   return (
-    <div className="container">
-      <span>
-        <h1>Git Hunt</h1>
-      </span>
-      <Input />
-      <Output />
-    </div>
+    <Fragment>
+      <Title />
+      <main className="container">
+        <Input />
+        <Output />
+      </main>
+      <Footer />
+    </Fragment>
   );
 };
 

@@ -10,17 +10,20 @@ const Output = () => {
   }, [info]);
 
   if (info === null) {
+    return <div className={classes.container}></div>;
+  }
+
+  if (info.message === "Not Found") {
     return (
       <div className={classes.container}>
-        <h1>{userName}</h1>
-        <p>Enter a Username</p>
+        <p>User Not Found</p>
       </div>
     );
   }
 
   return (
     <div className={classes.container}>
-      <h1>{userName}</h1>
+      <h1>Username: {userName}</h1>
       <img src={info.avatar_url} />
       <h1>Followers: {info.followers}</h1>
       <h1>Following: {info.following}</h1>
