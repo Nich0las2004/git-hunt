@@ -1,21 +1,16 @@
-import Input from "./templates/Input/Input.js";
-import Output from "./templates/Output/Output";
+import Main from "./templates/Main/Main.js";
 import Title from "./templates/Title/Title.js";
 import Footer from "./templates/Footer/Footer.js";
 
 import "./App.css";
-import { Fragment } from "react";
 
 const App = () => {
   return (
-    <Fragment>
+    <div className="container">
       <Title />
-      <main className="container">
-        <Input />
-        <Output />
-      </main>
+      <Main />
       <Footer />
-    </Fragment>
+    </div>
   );
 };
 

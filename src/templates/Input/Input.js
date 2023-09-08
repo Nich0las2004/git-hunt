@@ -14,8 +14,7 @@ const Input = () => {
         if (response.status == 404) {
           return setInfo(response);
         }
-        response.json()
-        .then((data) => setInfo(data))
+        response.json().then((data) => setInfo(data));
       })
       .catch((err) => console.log(err));
   };

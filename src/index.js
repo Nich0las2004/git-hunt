@@ -5,7 +5,7 @@ import UserProvider from "./context/user-provider";
 
 import App from "./App";
 
-import "./index.css";
+import './index.css'
 
 ReactDOM.render(
   <UserProvider>
