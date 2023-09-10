@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <a href="https://github.com/Nich0las2004" target="_blank">
-        <BsGithub />
+        <BsGithub className={classes.github} />
       </a>
       <a href="https://www.linkedin.com/in/nikoloz-oniani/" target="_blank">
-        <BsLinkedin />
+        <BsLinkedin className={classes.linkedin} />
       </a>
     </footer>
   );

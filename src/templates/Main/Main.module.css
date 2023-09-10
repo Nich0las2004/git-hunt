@@ -1,5 +1,6 @@
 .main {
-  background: yellow;
+  background: #006400;
   width: 30vw;
   height: 50vh;
+  padding: 1rem;
 }
