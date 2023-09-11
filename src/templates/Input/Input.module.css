@@ -18,6 +18,11 @@
   font-size: 1rem;
 }
 
+.inputField:focus {
+  border: 2px solid purple;
+  outline: none;
+}
+
 .inputField::placeholder {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -34,6 +39,8 @@
   cursor: pointer;
   border: none;
   transform: scale(1);
+  transition-duration: 0.2s;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .searchButton:hover,
