@@ -21,10 +21,24 @@ const Input = () => {
       .catch((err) => console.log(err));
   };
 
+  const handleEnterPress = (event) => {
+    if (event.key === "Enter") {
+      searchHandler();
+    }
+  };
+
   return (
     <span className={classes.container}>
-      <input className={classes.inputField} type="text" placeholder="Enter a Username" ref={userNameRef} />
-      <button className={classes.searchButton} onClick={searchHandler}>Search</button>
+      <input
+        className={classes.inputField}
+        type="text"
+        placeholder="Username"
+        ref={userNameRef}
+        onKeyDown={handleEnterPress}
+      />
+      <button className={classes.searchButton} onClick={searchHandler}>
+        Search
+      </button>
     </span>
   );
 };
