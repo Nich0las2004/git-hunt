@@ -3,4 +3,7 @@
   width: 30vw;
   height: 50vh;
   padding: 1rem;
+  display:flex;
+  flex-direction: column;
+  justify-content:space-around;
 }

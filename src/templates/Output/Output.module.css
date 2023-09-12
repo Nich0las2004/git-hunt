@@ -1,10 +1,51 @@
-/* .container {
-  background: red;
-  height: 100%;
-} */
+.container {
+  /* background: black; */
+  height: 60%;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 img {
-  width: 10rem;
-  height: 10rem;
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
+}
+
+.nameWithImage {
+  background: grey;
+  border-radius: 10px;
+  display: flex;
+  align-items:center;
+  padding: 1rem;
+}
+
+/* ordering elements inside nameWithImage class */
+
+.nameWithImage :nth-child(3) {
+  order: 1;
+  margin: 0.5rem;
+}
+
+.nameWithImage :nth-child(1) {
+  order: 2;
+  margin: 0.5rem;
+}
+
+.nameWithImage :nth-child(2) {
+  order: 3;
+}
+
+.nameWithImage > p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.otherInfo {
+  background:gray;
+  border-radius: 10px;
+  display:flex;
+  justify-content: space-around;
+  align-items:center;
+  padding: 1rem;
 }

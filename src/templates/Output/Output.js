@@ -15,10 +15,16 @@ const Output = () => {
 
   return (
     <div className={classes.container}>
-      <h1>{userName}</h1>
-      <img alt="username's profile" src={info.avatar_url} />
-      <h1>Followers: {info.followers}</h1>
-      <h1>Following: {info.following}</h1>
+      <div className={classes.nameWithImage}>
+        <p>{userName}</p>
+        <p>{info.name}</p>
+        <img alt="username's profile" src={info.avatar_url} />
+      </div>
+      <div className={classes.otherInfo}>
+        <p>Repos: {info.public_repos}</p>
+        <p>Followers: {info.followers}</p>
+        <p>Following: {info.following}</p>
+      </div>
     </div>
   );
 };
