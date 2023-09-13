@@ -1,10 +1,26 @@
 .container {
-  /* background: black; */
+  background: black;
+  padding: 0.5rem;
   height: 60%;
   border-radius: 10px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.userNotFound {
+  background: black;
+  padding: 0.5rem;
+  height: 60%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userNotFound > p {
+  color: white;
+  font-size: 1.5rem;
 }
 
 img {
@@ -17,7 +33,7 @@ img {
   background: grey;
   border-radius: 10px;
   display: flex;
-  align-items:center;
+  align-items: center;
   padding: 1rem;
 }
 
@@ -37,15 +53,31 @@ img {
   order: 3;
 }
 
-.nameWithImage > p{
-  font-family:Verdana, Geneva, Tahoma, sans-serif
+.nameWithImage > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.otherInfo > p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .otherInfo {
-  background:gray;
+  background: gray;
   border-radius: 10px;
-  display:flex;
+  display: flex;
   justify-content: space-around;
-  align-items:center;
+  align-items: center;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .user-not-found {
+    font-size: 1.125rem; /* Equivalent to 18px (1.125 * 16px) */
+  }
+}
+
+@media (max-width: 480px) {
+  .user-not-found {
+    font-size: 1rem; /* Equivalent to 16px (1 * 16px) */
+  }
 }

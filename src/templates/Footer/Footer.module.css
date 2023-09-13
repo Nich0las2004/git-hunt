@@ -18,9 +18,10 @@
   transform: scale(2.5);
 }
 
-.footer > a:nth-child(2) {
+.footer :nth-child(2) {
   background: white;
-  border-radius: 50%;
+  border: none;
+  border-radius: 100%;
 }
 
 .linkedin {

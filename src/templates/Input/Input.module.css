@@ -48,7 +48,8 @@
 
 .searchButton:hover,
 .searchButton:focus,
-.searchButton:active {
+.searchButton:active 
+{
   transform: scale(1.1);
   background-color: #fff;
   color: #333;
