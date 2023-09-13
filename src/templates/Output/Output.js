@@ -9,7 +9,11 @@ const Output = () => {
     console.log(info);
   }, [info]);
 
-  if (info === null || info.message == "Not Found") {
+  if (info === null) {
+    return <div className={classes.container}></div>;
+  }
+
+  if (info.message == "Not Found") {
     return (
       <div className={classes.userNotFound}>
         <p>User Not Found</p>
