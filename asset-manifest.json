@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/git-hunt/static/css/main.f6796f49.css",
+    "main.js": "/git-hunt/static/js/main.a120e58d.js",
+    "index.html": "/git-hunt/index.html",
+    "main.f6796f49.css.map": "/git-hunt/static/css/main.f6796f49.css.map",
+    "main.a120e58d.js.map": "/git-hunt/static/js/main.a120e58d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f6796f49.css",
+    "static/js/main.a120e58d.js"
+  ]
+}
