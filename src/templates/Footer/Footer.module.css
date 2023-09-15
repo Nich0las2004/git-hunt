@@ -18,12 +18,9 @@
   transform: scale(2.5);
 }
 
-.footer :nth-child(2) {
-  background: white;
-  border: none;
-  border-radius: 100%;
-}
-
 .linkedin {
   color: #0072b1;
+  background: white;
+  border-radius: 3px;
+  border: 1px solid #0072b1;
 }
