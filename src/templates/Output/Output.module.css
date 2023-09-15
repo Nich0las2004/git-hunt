@@ -70,6 +70,29 @@ img {
   padding: 1rem;
 }
 
+/* medium sized screen */
+
+@media (max-width: 1100px) {
+  .nameWithImage {
+    background: grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .otherInfo {
+    background: gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+}
+
 /* small screen  */
 
 @media (max-width: 768px) {
@@ -122,8 +145,8 @@ img {
   }
 
   .otherInfo > p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 0.4rem;
+    font-size: 0.3rem;
+    margin: 1px;
   }
 
   .user-not-found {
