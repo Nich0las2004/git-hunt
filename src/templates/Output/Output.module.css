@@ -24,8 +24,8 @@
 }
 
 img {
-  width: 5rem;
-  height: 5rem;
+  max-width: 5rem;
+  max-height: 5rem;
   border-radius: 50%;
 }
 
@@ -70,14 +70,63 @@ img {
   padding: 1rem;
 }
 
+/* small screen  */
+
 @media (max-width: 768px) {
+  img {
+    max-width: 60%;
+    border-radius: 50%;
+  }
+
+  .nameWithImage {
+    background: grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+  }
+
   .user-not-found {
-    font-size: 1.125rem; /* Equivalent to 18px (1.125 * 16px) */
+    font-size: 1.125rem;
   }
 }
 
+/* super small screen  */
+
 @media (max-width: 480px) {
+  .container {
+    background: black;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .userNotFound {
+    background: black;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    height: 60%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nameWithImage > p {
+    font-size: 0.5rem;
+  }
+
+  .otherInfo > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.4rem;
+  }
+
   .user-not-found {
-    font-size: 1rem; /* Equivalent to 16px (1 * 16px) */
+    font-size: 1rem;
   }
 }
